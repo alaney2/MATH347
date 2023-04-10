@@ -1,0 +1,97 @@
+\documentclass[11pt]{article}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\newtheorem*{thm}{Theorem C}
+
+
+\setlength{\textheight}{9in} \setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{-.3in} \setlength{\headheight}{0.0in}
+\setlength{\headsep}{0in} \setlength{\leftmargin}{0.0in}
+\setlength{\oddsidemargin}{0.0in}
+
+\pagestyle{empty}
+
+
+\newcommand{\pts}[1]{{[#1]}}
+\newcommand{\R}{{{{\mathbb{R}}}}}
+\newcommand{\abs}[1]{\left| #1 \right|}
+\newcommand{\ds}{\displaystyle}
+
+
+\begin{document}
+
+\flushright
+
+
+\begin{center}
+    \textbf{\large Homework 1: Math 347}
+\end{center}
+
+\begin{center}
+	\textbf{Instructions:} 
+		You may use any results from the book or lecture in your proofs.  You are welcome and encouraged to work together with other students on these problems, but the final write up should be done alone.  If people submit solutions that look highly similar, then they will get automatic zeros on the problem.
+	\end{center}
+
+    
+\newcounter{parts}
+\newcounter{problems}
+\newcounter{subparts}
+\begin{list}{\textbf{Problem \arabic{problems}.}}{\usecounter{problems} \setlength{\leftmargin}{0in}}
+% \begin{list}{(\alph{parts})}{\usecounter{parts}}
+%	\item
+% \end{list}
+
+
+\item Let $A$, $B$, and $C$ be logical statements and consider the following pair of logical statements $L$ and $R$
+$$
+	A \Rightarrow (B \vee C) \quad \mbox{and}\quad \neg\, C \Rightarrow (A \Rightarrow C)
+$$
+For each of statements $L \Rightarrow R$ and $R \Rightarrow L$, either prove it is a tautology or give a counterexample (without using a truth table).
+
+
+\item Let $A$, $B$, and $C$ be logical statements and consider the following pair of logical statements $L$ and $R$
+$$
+	(A \Rightarrow B) \Rightarrow C \quad \mbox{and}\quad A \Rightarrow (B \Rightarrow C)
+$$
+For each of statements $L \Rightarrow R$ and $R \Rightarrow L$, either prove it is a tautology or give a counterexample (without using a truth table).
+
+
+
+\item Let $A$, $B$, $C$, and $D$ be logical statements.  Prove that
+$$
+\mbox{$A \Rightarrow B$\, and\, $(A \Rightarrow C) \Rightarrow D$}
+$$
+implies $(A \Rightarrow (B \Rightarrow C)) \Rightarrow D$
+(without using a truth table).
+
+\vspace{.2in}
+
+\noindent
+
+\textbf{From Donaldson and Pantanto:}
+
+2.1: 12, 13, 18 (ignore the extension to any number of inputs)
+
+2.2: 14, 16
+
+Hint for 2.1.18: It is particularly hard to find a proof that does not involve brute force, so do not worry if you cannot figure it out.  My hint is to be `lazy' (like a good mathematician) and find a few basic truth tables that can be combined (with $\vee$ or alternatively $\wedge$) to get all possible truth tables.  If you have done this, you only need to come up with formulas for the basic ones (as opposed to all possible truth tables).
+
+
+
+% \begin{list}{(\alph{parts})}{\usecounter{parts}}
+%    \item Prove one of the following: i) $\mbox{rank}(AB) \leq \mbox{rank}(A)$ or ii) $\mbox{rank}(UT) \leq \mbox{rank}(U)$.
+%    \item Prove one of the following: iii) $\mbox{rank}(AB) \leq \mbox{rank}(B)$ or iv) $\mbox{rank}(UT) \leq \mbox{rank}(T)$.
+% \end{list} 
+ 
+\end{list}
+
+
+
+
+
+
+
+\end{document} 
